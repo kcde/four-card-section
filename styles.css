@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+html {
+  font-size: 10px;
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --gray-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--light-gray);
+  color: var(--gray-blue);
+}
+
+#container {
+  padding: 4rem;
+  width: 375px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#intro {
+  text-align: center;
+}
+#intro-head {
+  font-weight: 200;
+  font-size: 2rem;
+}
+#intro-tagline {
+  font-weight: 600;
+  font-size: 2rem;
+}
+#intro-text {
+  margin-top: 2rem;
+}
+#intro-head,
+#intro-tagline,
+.card-head {
+  color: var(--dark-blue);
+}
+.card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  padding: 3rem;
+  margin-top: 3rem;
+  border-radius: 5px;
+  width: 300px;
+}
+.card-head {
+  font-weight: 600;
+}
+.card-media {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+.card-img {
+  width: 50px;
+  height: 50px;
+}
+.card-text {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+#column1,
+#column2,
+#column3 {
+  width: 100%;
+}
+
+/* cards before */
+#card1 {
+  border-top: 3px solid var(--cyan);
+}
+#card2 {
+  border-top: 3px solid var(--red);
+}
+#card3 {
+  border-top: 3px solid var(--orange);
+}
+#card4 {
+  border-top: 3px solid var(--blue);
+}
+
+@media (min-width: 1024px) {
+  #container {
+    width: 968px;
+  }
+  #products {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  #intro-head {
+    font-weight: 200;
+    font-size: 3.5rem;
+  }
+  #intro-tagline {
+    font-weight: 600;
+    font-size: 3.5rem;
+  }
+  #intro-text {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+}
